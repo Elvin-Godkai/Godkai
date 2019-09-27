@@ -117,7 +117,6 @@ class LogEntryAdmin(admin.ModelAdmin):
     def get_queryset(self, request):
         qs = super(LogEntryAdmin, self).get_queryset(request)
         if str(request.user) == 'Elvin':
-            print(request.user)
             return qs
         else:
             return qs.filter(user=request.user)
