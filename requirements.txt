@@ -1,3 +1,4 @@
 Django~=2.2.5
 sqlparse~=0.3.0
 pymysql~=0.9.3
+mistune~=0.8.4
